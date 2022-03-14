@@ -11,13 +11,21 @@ Proiect Arhitecturi Software
 # Status
     Functional
 # ToDo
-    Delete product handler -> OPA
-    GUI Delete product handler -> OPA 
-    Increase log coverage -> CRA
-    Method check (metaclass-like) -> OPA
-    Dissambly info in logs -> OPA
-    UI/UX redesign -> CRA
-    .ini for gfx -> OPA
-    Database instead of json? 
-    Better handling of products list
-    Conda venv / Docker build
+Level 1: ASAP
+Level 2: Mandatory
+Level 3: Maybe
+
+    Companies are not loaded into gfx -> OPA, level 1 
+    Implement / redesign sanity_check() for Product / Supplier / Company -> CRA, level 1
+    Replace getters / setters with @property -> OPA/CRA, level 2
+    Comments / annotations -> CRA, level 2
+    <<Delete>> product handler -> OPA, level 2
+    GUI for <<Delete>> product handler -> OPA, level 2
+    Increase log coverage -> CRA, level 1
+    Method check (metaclass-like) -> OPA, level 2
+    Dissambly info in logs -> OPA, level 3
+    UI/UX redesign -> CRA, level 3
+    .ini for gfx -> OPA, level 2
+    Database instead of json? -> ?, level 3
+    Better handling of products list -> ?, level 3
+    Conda venv / Docker build -> ?, level 3
