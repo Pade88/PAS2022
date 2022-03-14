@@ -1,0 +1,57 @@
+00:21:35:1647296495 - INFO - Log file configured!
+00:21:35:1647296495 - INFO - TSMC with "123456789" tax identification, having address at 101st, Cupertino, CA, USA, is represented by John Woo which can be called at 0771!
+00:21:35:1647296495 - INFO - Intel with "123456789" tax identification, having address at 101st, Cupertino, CA, USA, is represented by John Woo which can be called at 0771!
+00:21:35:1647296495 - INFO - Samsung with "123456789" tax identification, having address at 101st, Cupertino, CA, USA, is represented by John Woo which can be called at 0771!
+00:21:35:1647296495 - INFO - Sk Hynx with "123456789" tax identification, having address at 101st, Cupertino, CA, USA, is represented by John Woo which can be called at 0771!
+00:21:35:1647296495 - INFO - BroadCom with "123456789" tax identification, having address at 101st, Cupertino, CA, USA, is represented by John Woo which can be called at 0771!
+00:21:35:1647296495 - INFO - QualComm with "123456789" tax identification, having address at 101st, Cupertino, CA, USA, is represented by John Woo which can be called at 0771!
+00:21:35:1647296495 - INFO - Micron Tech with "123456789" tax identification, having address at 101st, Cupertino, CA, USA, is represented by John Woo which can be called at 0771!
+00:21:35:1647296495 - INFO - Applied Materials with "123456789" tax identification, having address at 101st, Cupertino, CA, USA, is represented by John Woo which can be called at 0771!
+00:21:35:1647296495 - INFO - Nvidia with "123456789" tax identification, having address at 101st, Cupertino, CA, USA, is represented by John Woo which can be called at 0771!
+00:21:35:1647296495 - INFO - Texas Instruments with "123456789" tax identification, having address at 101st, Cupertino, CA, USA, is represented by John Woo which can be called at 0771!
+00:21:35:1647296495 - ERROR - TSMC, Samsung, Nvidia, Intel should be list!
+00:21:35:1647296495 - ERROR - Texas Instruments, Applied Materials, Micron Tech should be list!
+00:21:35:1647296495 - INFO - Furnizorul TSMC are produsul AT89 costa 101 si sunt disponibile 9420 bucati!
+00:21:35:1647296495 - INFO - Furnizorul TSMC are produsul AT99 costa 188 si sunt disponibile 15202 bucati!
+00:21:35:1647296495 - INFO - Furnizorul TSMC are produsul AT210 costa 294 si sunt disponibile 20000 bucati!
+00:21:35:1647296495 - INFO - Furnizorul TSMC are produsul AT880 costa 1001 si sunt disponibile 9420232 bucati!
+00:21:35:1647296495 - INFO - Furnizorul TSMC are produsul AT555 costa 882 si sunt disponibile 1239 bucati!
+00:21:35:1647296495 - INFO - Furnizorul TSMC are produsul AT293 costa 492 si sunt disponibile 19293 bucati!
+00:21:35:1647296495 - INFO - Furnizorul TSMC are produsul AT582 costa 109 si sunt disponibile 10203 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Intel are produsul 68HC05 costa 992 si sunt disponibile 7000000 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Intel are produsul 68HC07 costa 1001 si sunt disponibile 2000000 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Intel are produsul 68HC08 costa 1233 si sunt disponibile 22000000 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Samsung are produsul SM008HC8 costa 22 si sunt disponibile 776 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Samsung are produsul SM008HC29 costa 15 si sunt disponibile 996 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Samsung are produsul SM008HC245 costa 02 si sunt disponibile 112 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Sk Hynx are produsul SKH5G001 costa 612 si sunt disponibile 8288282 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Sk Hynx are produsul SKH5G002 costa 115 si sunt disponibile 99929 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Sk Hynx are produsul SKH5G005 costa 7272 si sunt disponibile 101010 bucati!
+00:21:35:1647296495 - INFO - Furnizorul BroadCom are produsul BCOMGRAPH001 costa 202 si sunt disponibile 992 bucati!
+00:21:35:1647296495 - INFO - Furnizorul BroadCom are produsul BCOMGRAPH002 costa 1919 si sunt disponibile 8 bucati!
+00:21:35:1647296495 - INFO - Furnizorul BroadCom are produsul BCOMGRAPH003 costa 292 si sunt disponibile 151 bucati!
+00:21:35:1647296495 - INFO - Furnizorul QualComm are produsul QC001 costa 202 si sunt disponibile 992 bucati!
+00:21:35:1647296495 - INFO - Furnizorul QualComm are produsul QC002 costa 199 si sunt disponibile 8 bucati!
+00:21:35:1647296495 - INFO - Furnizorul QualComm are produsul QC003 costa 292 si sunt disponibile 151 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Micron Tech are produsul MT5GMODEM02 costa 2992 si sunt disponibile 12983 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Micron Tech are produsul MT5GMODEM08 costa 2002 si sunt disponibile 292998 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Micron Tech are produsul MT5GMODEM03 costa 11 si sunt disponibile 1238 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Micron Tech are produsul A costa 2 si sunt disponibile 3 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Applied Materials are produsul APLMHAPTIC_ENGINE020 costa 523 si sunt disponibile 123 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Applied Materials are produsul APLMHAPTIC_ENGINE030 costa 52 si sunt disponibile 574574 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Applied Materials are produsul APLMHAPTIC_ENGINE050 costa 12 si sunt disponibile 2462 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Nvidia are produsul GTX1080 costa 999 si sunt disponibile 1232222 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Nvidia are produsul GTX1090 costa 1029 si sunt disponibile 574574 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Nvidia are produsul RTX2080 costa 1299 si sunt disponibile 2383 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Texas Instruments are produsul TI_CPU_01 costa 999 si sunt disponibile 1232222 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Texas Instruments are produsul TI_CPU_02 costa 1029 si sunt disponibile 574574 bucati!
+00:21:35:1647296495 - INFO - Furnizorul Texas Instruments are produsul TI_CPU_03 costa 1299 si sunt disponibile 2383 bucati!
+00:21:36:1647296496 - INFO - Interfata grafica a fost initializata cu succes!
+00:21:38:1647296498 - INFO - Butonul de vizualizare a produselor a fost apasat
+00:21:38:1647296498 - INFO - Table view graphics initialized successfully!
+00:21:40:1647296500 - INFO - Butonul de adaugare a furnizorilor a fost apasat
+00:21:40:1647296500 - INFO - Fereastra de adaugare a unui furnizor a fost initiata
+00:21:40:1647296500 - INFO - Butonul <<Done>> a fost creat cu succes! {'add_btn': <PyQt6.QtWidgets.QPushButton object at 0x1024a8f70>, 'self': <AddWindowGui.AddWindowBuilder object at 0x1024b0700>}
+00:21:40:1647296500 - INFO - Butonul <<Close>> a fost creat cu succes! {'close_btn': <PyQt6.QtWidgets.QPushButton object at 0x1024a8e50>, 'self': <AddWindowGui.AddWindowBuilder object at 0x1024b0700>}
+00:21:40:1647296500 - INFO - Grafica ferestrei de adaugare a unui furnizor a fost initializata
+00:21:43:1647296503 - INFO - Aplicatia ruleaza

@@ -1,0 +1,12 @@
+{
+  "Companies": [
+    {
+      "name": "Apple",
+      "suppliers": "TSMC, Samsung, Nvidia, Intel"
+    },
+    {
+      "name": "Lenovo",
+      "suppliers": "Texas Instruments, Applied Materials, Micron Tech"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "Suppliers": [
+    {
+      "name": "TSMC",
+      "tax_identification": "123456789",
+      "product_list": [
+        {
+          "name": "AT89",
+          "price": "101",
+          "quantity": "9420"
+        },
+        {
+          "name": "AT99",
+          "price": "188",
+          "quantity": "15202"
+        },
+        {
+          "name": "AT210",
+          "price": "294",
+          "quantity": "20000"
+        },
+        {
+          "name": "AT880",
+          "price": "1001",
+          "quantity": "9420232"
+        },
+        {
+          "name": "AT555",
+          "price": "882",
+          "quantity": "1239"
+        },
+        {
+          "name": "AT293",
+          "price": "492",
+          "quantity": "19293"
+        },
+        {
+          "name": "AT582",
+          "price": "109",
+          "quantity": "10203"
+        }
+      ],
+      "address": "101st, Cupertino, CA, USA",
+      "in_charge": "John Woo",
+      "phone": "0771"
+    },
+    {
+      "name": "Intel",
+      "tax_identification": "123456789",
+      "product_list": [
+        {
+          "name": "68HC05",
+          "price": "992",
+          "quantity": "7000000"
+        },
+        {
+          "name": "68HC07",
+          "price": "1001",
+          "quantity": "2000000"
+        },
+        {
+          "name": "68HC08",
+          "price": "1233",
+          "quantity": "22000000"
+        }
+      ],
+      "address": "101st, Cupertino, CA, USA",
+      "in_charge": "John Woo",
+      "phone": "0771"
+    },
+    {
+      "name": "Samsung",
+      "tax_identification": "123456789",
+      "product_list": [
+        {
+          "name": "SM008HC8",
+          "price": "22",
+          "quantity": "776"
+        },
+        {
+          "name": "SM008HC29",
+          "price": "15",
+          "quantity": "996"
+        },
+        {
+          "name": "SM008HC245",
+          "price": "02",
+          "quantity": "112"
+        }
+      ],
+      "address": "101st, Cupertino, CA, USA",
+      "in_charge": "John Woo",
+      "phone": "0771"
+    },
+    {
+      "name": "Sk Hynx",
+      "tax_identification": "123456789",
+      "product_list": [
+        {
+          "name": "SKH5G001",
+          "price": "612",
+          "quantity": "8288282"
+        },
+        {
+          "name": "SKH5G002",
+          "price": "115",
+          "quantity": "99929"
+        },
+        {
+          "name": "SKH5G005",
+          "price": "7272",
+          "quantity": "101010"
+        }
+      ],
+      "address": "101st, Cupertino, CA, USA",
+      "in_charge": "John Woo",
+      "phone": "0771"
+    },
+    {
+      "name": "BroadCom",
+      "tax_identification": "123456789",
+      "product_list": [
+        {
+          "name": "BCOMGRAPH001",
+          "price": "202",
+          "quantity": "992"
+        },
+        {
+          "name": "BCOMGRAPH002",
+          "price": "1919",
+          "quantity": "8"
+        },
+        {
+          "name": "BCOMGRAPH003",
+          "price": "292",
+          "quantity": "151"
+        }
+      ],
+      "address": "101st, Cupertino, CA, USA",
+      "in_charge": "John Woo",
+      "phone": "0771"
+    },
+    {
+      "name": "QualComm",
+      "tax_identification": "123456789",
+      "product_list": [
+        {
+          "name": "QC001",
+          "price": "202",
+          "quantity": "992"
+        },
+        {
+          "name": "QC002",
+          "price": "199",
+          "quantity": "8"
+        },
+        {
+          "name": "QC003",
+          "price": "292",
+          "quantity": "151"
+        }
+      ],
+      "address": "101st, Cupertino, CA, USA",
+      "in_charge": "John Woo",
+      "phone": "0771"
+    },
+    {
+      "name": "Micron Tech",
+      "tax_identification": "123456789",
+      "product_list": [
+        {
+          "name": "MT5GMODEM02",
+          "price": "2992",
+          "quantity": "12983"
+        },
+        {
+          "name": "MT5GMODEM08",
+          "price": "2002",
+          "quantity": "292998"
+        },
+        {
+          "name": "MT5GMODEM03",
+          "price": "11",
+          "quantity": "1238"
+        },
+        {
+          "name": "A",
+          "price": "2",
+          "quantity": "3"
+        }
+      ],
+      "address": "101st, Cupertino, CA, USA",
+      "in_charge": "John Woo",
+      "phone": "0771"
+    },
+    {
+      "name": "Applied Materials",
+      "tax_identification": "123456789",
+      "product_list": [
+        {
+          "name": "APLMHAPTIC_ENGINE020",
+          "price": "523",
+          "quantity": "123"
+        },
+        {
+          "name": "APLMHAPTIC_ENGINE030",
+          "price": "52",
+          "quantity": "574574"
+        },
+        {
+          "name": "APLMHAPTIC_ENGINE050",
+          "price": "12",
+          "quantity": "2462"
+        }
+      ],
+      "address": "101st, Cupertino, CA, USA",
+      "in_charge": "John Woo",
+      "phone": "0771"
+    },
+    {
+      "name": "Nvidia",
+      "tax_identification": "123456789",
+      "product_list": [
+        {
+          "name": "GTX1080",
+          "price": "999",
+          "quantity": "1232222"
+        },
+        {
+          "name": "GTX1090",
+          "price": "1029",
+          "quantity": "574574"
+        },
+        {
+          "name": "RTX2080",
+          "price": "1299",
+          "quantity": "2383"
+        }
+      ],
+      "address": "101st, Cupertino, CA, USA",
+      "in_charge": "John Woo",
+      "phone": "0771"
+    },
+    {
+      "name": "Texas Instruments",
+      "tax_identification": "123456789",
+      "product_list": [
+        {
+          "name": "TI_CPU_01",
+          "price": "999",
+          "quantity": "1232222"
+        },
+        {
+          "name": "TI_CPU_02",
+          "price": "1029",
+          "quantity": "574574"
+        },
+        {
+          "name": "TI_CPU_03",
+          "price": "1299",
+          "quantity": "2383"
+        }
+      ],
+      "address": "101st, Cupertino, CA, USA",
+      "in_charge": "John Woo",
+      "phone": "0771"
+    }
+  ]
+}
