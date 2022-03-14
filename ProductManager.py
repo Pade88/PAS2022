@@ -18,14 +18,14 @@ class ProductsManager:
                 self.products_list.append(Product(supplier["name"], name, price, quantity))
 
         for item in self.products_list:
-            LogFile.log_message(item.print_product(), "info")
+            LogFile.log_message(repr(item), "info")
 
     def get_products(self, owner):
         LogFile.log_message(f"ProductManager {self.get_products.__name__} called!", "debug")
-        return [prod for prod in self.products_list if prod.get_owner() == owner]
+        return [prod for prod in self.products_list if prod.owner == owner]
 
     def add_product(self, product):
         LogFile.log_message(f"ProductManager {self.add_product.__name__} called with {locals()}", "debug")
-        IOManager.update_product_list(SUPPLIERS_DB_FILE, [product.get_owner(), product.get_name(),
-                                                          product.get_price(), product.get_quantity()])
+        IOManager.update_product_list(SUPPLIERS_DB_FILE, [product.owner, product.name,
+                                                          product.price, product.quantity])
         self.products_list.append(product)

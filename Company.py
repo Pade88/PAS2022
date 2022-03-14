@@ -2,29 +2,33 @@ from Logger import LogFile
 
 
 class Company:
-    def __init__(self, _name, _suppliers):
-        self.name = _name
-        self.suppliers = _suppliers
+    def __init__(self, __name, __suppliers):
+        self._name = __name
+        self._suppliers = __suppliers.split(",")
 
     def __str__(self):
-        return "{} company have the following suppliers: {}".format(self.name, self.suppliers)
+        return "{} company have the following suppliers: {}".format(self._name, self._suppliers)
 
     def sanity_check(self):
         # FIXME
         return True
 
-    def get_company_name(self):
-        LogFile.log_message(f"{self.get_company_name.__name__} called!", "info")
-        return self.name
+    @property
+    def name(self):
+        LogFile.log_message(f"Company name getter called!", "info")
+        return self._name
 
-    def set_company_name(self, new_name):
-        LogFile.log_message(f"{self.set_company_name.__name__} called with {locals()}", "info")
-        self.name = new_name
+    @name.setter
+    def name(self, new_name):
+        LogFile.log_message(f"Company name setter called with {locals()}", "info")
+        self._name = new_name
 
-    def get_company_suppliers(self):
-        LogFile.log_message(f"{self.get_company_suppliers.__name__} called!", "info")
-        return self.suppliers.split(",")
+    @property
+    def suppliers(self):
+        LogFile.log_message(f"Suppliers getter called!", "info")
+        return self._suppliers
 
-    def set_company_suppliers(self, new_company_suppliers):
-        LogFile.log_message(f"{self.set_company_suppliers.__name__} called with {locals()}", "info")
-        self.suppliers = new_company_suppliers
+    @suppliers.setter
+    def suppliers(self, new_suppliers):
+        LogFile.log_message(f"Supplier setter called with {locals()}", "info")
+        self._suppliers = new_suppliers

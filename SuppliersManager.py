@@ -26,19 +26,19 @@ class SupplierManager:
         LogFile.log_message(f"Supplier {self.add_new_supplier.__name__} called with {locals()}", "debug")
         new_supplier = Supplier(*args)
 
-        supplier_to_json = {"name": new_supplier.get_name(),
-                            "tax_identification": new_supplier.get_tax_identification(),
-                            "product_list": new_supplier.get_product_list(),
-                            "address": new_supplier.get_address(),
-                            "in_charge": new_supplier.get_in_charge(),
-                            "phone": new_supplier.get_phone()}
+        supplier_to_json = {"name": new_supplier.name,
+                            "tax_identification": new_supplier.tax_identification,
+                            "product_list": new_supplier.product_list,
+                            "address": new_supplier.address,
+                            "in_charge": new_supplier.in_charge,
+                            "phone": new_supplier.phone}
         IOManager.update_json(SUPPLIERS_DB_FILE, supplier_to_json)
         LogFile.log_message(f"Furnizorul {supplier_to_json} a fost adaugat", "info")
         self.update_suppliers_list()
 
     def get_suppliers_names(self):
         LogFile.log_message(f"Supplier {self.get_suppliers_names.__name__} called", "debug")
-        return [supplier.get_name() for supplier in self.suppliers_list]
+        return [supplier.name for supplier in self.suppliers_list]
 
     def get_suppliers(self):
         LogFile.log_message(f"Supplier {self.get_suppliers.__name__} called", "debug")
@@ -47,11 +47,11 @@ class SupplierManager:
     def get_suppliers_update(self, suppliers_names):
         LogFile.log_message(f"Supplier {self.get_suppliers_update.__name__} called with {locals()}", "debug")
         return [spl_item for item in suppliers_names for spl_item in self.suppliers_list
-                if item.strip() == spl_item.get_name()]
+                if item.strip() == spl_item.name]
 
     def search_supplier_by_tax(self, tax_number):
         LogFile.log_message(f"Supplier {self.search_supplier_by_tax.__name__} called with {locals()}", "debug")
         LogFile.log_message(f"Functia de cautare a furnizorilor dupa CUI a fost apelata!", "info")
         for supplier in self.suppliers_list:
-            if supplier.get_tax_identification() == tax_number:
+            if supplier.tax_identification == tax_number:
                 return str(supplier)

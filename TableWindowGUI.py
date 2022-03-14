@@ -153,7 +153,7 @@ class TableModel(QtCore.QAbstractTableModel):
         self.main_gui = main_gui
 
     def data(self, index, role):
-        output_list = [[product.get_name().strip(), product.get_price().strip(), product.get_quantity().strip()]
+        output_list = [[product.name.strip(), product.price.strip(), product.quantity.strip()]
                        for product in self.main_gui.products_manager.get_products(self.main_gui.get_current_supplier())]
 
         if role == Qt.ItemDataRole.DisplayRole:

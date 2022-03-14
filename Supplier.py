@@ -2,20 +2,25 @@ from Logger import LogFile
 
 
 class Supplier:
-    def __init__(self, _name, _tax_identification, _product_list, _address, _in_charge, _phone):
-        self.name = _name
-        self.tax_identification = _tax_identification
-        self.product_list = _product_list
-        self.address = _address
-        self.in_charge = _in_charge
-        self.phone = _phone
+    def __init__(self, __name, __tax_identification, __product_list, __address, __in_charge, __phone):
+        self._name = __name
+        self._tax_identification = __tax_identification
+        self._product_list = __product_list
+        self._address = __address
+        self._in_charge = __in_charge
+        self._phone = __phone
 
     def __str__(self):
-        return '{SName} with "{taxId}" tax identification, having address at {addr}, is represented by {ich} ' \
-               'which can be called at {phn}!'.format(SName=self.name, taxId=self.tax_identification, addr=self.address,
-                                                      ich=self.in_charge, phn=self.phone)
+        return f'{self._name} with "{self._tax_identification}" tax identification, having address at {self.address} ' \
+               f's represented by {self.in_charge} which can be called at {self.phone}!'
+
+    def __repr__(self):
+        args = [self._name, self.tax_identification, self._product_list, self.address, self.in_charge, self._phone]
+        return f"Supplier({','.join(args)})"
 
     def sanity_check(self):
+        # FIXME
+        """
         LogFile.log_message("sanity_check called!", "info")
 
         if not isinstance(self.name, str):
@@ -41,52 +46,53 @@ class Supplier:
             return False
 
         LogFile.log_message("Valid object created, {}".format(self.__str__()), "info")
+        """
         return True
 
-    def get_name(self):
-        LogFile.log_message(f"Supplier {self.get_name.__name__} called!", "debug")
-        return self.name
+    @property
+    def name(self):
+        return self._name
 
-    def get_tax_identification(self):
-        LogFile.log_message(f"Supplier {self.get_tax_identification.__name__} called!", "debug")
-        return self.tax_identification
+    @name.setter
+    def name(self, new_name):
+        self._name = new_name
 
-    def get_product_list(self):
-        LogFile.log_message(f"Supplier {self.get_product_list.__name__} called!", "debug")
-        return self.product_list
+    @property
+    def tax_identification(self):
+        return self._tax_identification
 
-    def get_address(self):
-        LogFile.log_message(f"Supplier {self.get_address.__name__} called!", "debug")
-        return self.address
+    @tax_identification.setter
+    def tax_identification(self, new_tax_id):
+        self._tax_identification = new_tax_id
 
-    def get_in_charge(self):
-        LogFile.log_message(f"Supplier {self.get_in_charge.__name__} called!", "debug")
-        return self.in_charge
+    @property
+    def product_list(self):
+        return self._product_list
 
-    def get_phone(self):
-        LogFile.log_message(f"Supplier {self.get_phone.__name__} called!", "debug")
-        return self.phone
+    @product_list.setter
+    def product_list(self, new_product_list):
+        self._product_list = new_product_list
 
-    def set_phone(self, new_phone):
-        LogFile.log_message(f"Supplier {self.set_phone.__name__} called! with params {locals()}", "debug")
-        self.phone = new_phone
+    @property
+    def address(self):
+        return self._address
 
-    def set_in_charge(self, new_in_charge):
-        LogFile.log_message(f"Supplier {self.set_in_charge.__name__} called! with params {locals()}", "debug")
-        self.in_charge = new_in_charge
+    @address.setter
+    def address(self, new_address):
+        self._address = new_address
 
-    def set_address(self, new_address):
-        LogFile.log_message(f"Supplier {self.set_address.__name__} called! with params {locals()}", "debug")
-        self.address = new_address
+    @property
+    def in_charge(self):
+        return self._in_charge
 
-    def set_product_list(self, new_product_list):
-        LogFile.log_message(f"Supplier {self.set_product_list.__name__} called! with params {locals()}", "debug")
-        self.product_list = new_product_list
+    @in_charge.setter
+    def in_charge(self, new_in_charge):
+        self._in_charge = new_in_charge
 
-    def set_tax_identification(self, new_tax_identification):
-        LogFile.log_message(f"Supplier {self.set_tax_identification.__name__} called! with params {locals()}", "debug")
-        self.tax_identification = new_tax_identification
+    @property
+    def phone(self):
+        return self._phone
 
-    def set_name(self, new_name):
-        LogFile.log_message(f"Supplier {self.set_name.__name__} called! with params {locals()}", "debug")
-        self.name = new_name
+    @phone.setter
+    def phone(self, new_phone):
+        self._phone = new_phone

@@ -16,7 +16,7 @@ class CompanyManager:
 
     def get_companies_names(self):
         LogFile.log_message(f"Company {self.get_companies_names.__name__} called", "debug")
-        return [company.get_company_name() for company in self.companies_list]
+        return [company.name for company in self.companies_list]
 
     def get_company(self):
         LogFile.log_message(f"Company {self.get_company.__name__} called", "debug")
@@ -25,8 +25,8 @@ class CompanyManager:
     def get_company_suppliers(self, company_name):
         LogFile.log_message(f"Company {self.get_company_suppliers.__name__} called", "debug")
         for item in self.companies_list:
-            if item.get_company_name() == company_name:
-                return item.get_company_suppliers()
+            if item.name == company_name:
+                return item.suppliers
 
     def add_new_supplier(self, company, supplier):
         LogFile.log_message(f"Company {self.add_new_supplier.__name__} called with {locals()}", "debug")
