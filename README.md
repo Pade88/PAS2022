@@ -12,6 +12,7 @@ Proiect Arhitecturi Software
     Version 1.0.0 -> Functional
     Version 1.0.1 -> Fixed (1), related to (2)
     Version 1.0.2 -> Fixed (3), to be tested
+    Version 1.0.3 -> Fixed (15), to be tested
 # ToDo
 Level 1: ASAP
 Level 2: Mandatory
@@ -31,5 +32,6 @@ Level 3: Maybe
     o(12) Database instead of json? -> ?, level 3
     o(13) Better handling of products list -> ?, level 3
     o(14) Conda venv / Docker build -> ?, level 3
-    o(15) GUI may crash on suppliers list when company is set -> OPA, level 1
+    f(15) GUI may crash on suppliers list when company is set -> OPA, level 1
     o(16) Constant app test / create a class for unit test ( extend logger maybe) -> CRA, level 1
+    o(17) Product table view may crash when new products are inserted -> OPA, level 1

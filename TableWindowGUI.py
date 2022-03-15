@@ -165,6 +165,7 @@ class TableModel(QtCore.QAbstractTableModel):
         return len(self._data)
 
     def columnCount(self, index):
+        # FIXME
         return 3
 
     def insertRows(self, position, rows, item, parent=QtCore.QModelIndex()):

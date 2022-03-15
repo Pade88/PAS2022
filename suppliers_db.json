@@ -38,6 +38,11 @@
           "name": "AT582",
           "price": "109",
           "quantity": "10203"
+        },
+        {
+          "name": "AT5922",
+          "price": "11",
+          "quantity": "33"
         }
       ],
       "address": "101st, Cupertino, CA, USA",
@@ -182,11 +187,6 @@
           "name": "MT5GMODEM03",
           "price": "11",
           "quantity": "1238"
-        },
-        {
-          "name": "A",
-          "price": "2",
-          "quantity": "3"
         }
       ],
       "address": "101st, Cupertino, CA, USA",

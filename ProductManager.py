@@ -18,7 +18,9 @@ class ProductsManager:
                 self.products_list.append(Product(supplier["name"], name, price, quantity))
 
         for item in self.products_list:
-            LogFile.log_message(repr(item), "info")
+            # FIXME
+            #LogFile.log_message(repr(item), "info")
+            pass
 
     def get_products(self, owner):
         LogFile.log_message(f"ProductManager {self.get_products.__name__} called!", "debug")

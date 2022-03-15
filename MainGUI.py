@@ -2,7 +2,15 @@
 import sys
 
 # HomeBrew-ed
-from PyQt6.QtWidgets import QWidget, QApplication, QPushButton, QLabel, QGridLayout, QComboBox, QTextEdit, QMainWindow
+from PyQt6.QtWidgets import (
+    QWidget,
+    QApplication,
+    QPushButton,
+    QLabel,
+    QGridLayout,
+    QComboBox,
+    QTextEdit,
+    QMainWindow)
 from PyQt6 import QtCore
 
 # PMSIC build
@@ -80,7 +88,6 @@ class GUIBuilder(QMainWindow):
         [self.suppliers_combo_items.addItem(item) for item in items_list]
         self.suppliers_combo_items.activated.connect(lambda: self.set_text_edit(
             self.suppliers[self.suppliers_combo_items.currentIndex()]))
-
         return self.suppliers_combo_items
 
     def update_suppliers_combo_box(self, new_items):

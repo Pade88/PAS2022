@@ -11,42 +11,40 @@ class Supplier:
         self._phone = __phone
 
     def __str__(self):
-        return f'{self._name} with "{self._tax_identification}" tax identification, having address at {self.address} ' \
-               f's represented by {self.in_charge} which can be called at {self.phone}!'
+        return f'{self._name} with "{self._tax_identification}" tax identification, having address at {self._address} ' \
+               f's represented by {self._in_charge} which can be called at {self._phone}!'
 
     def __repr__(self):
-        args = [self._name, self.tax_identification, self._product_list, self.address, self.in_charge, self._phone]
+        args = [self._name, self._tax_identification, ", ".join(self._product_list), self._address, self._in_charge, self._phone]
         return f"Supplier({','.join(args)})"
 
     def sanity_check(self):
         # FIXME
-        """
         LogFile.log_message("sanity_check called!", "info")
 
-        if not isinstance(self.name, str):
-            LogFile.log_message("Name -> {}, should be a string!".format(self.name), "error")
+        if not isinstance(self._name, str):
+            LogFile.log_message("Name -> {}, should be a string!".format(self._name), "error")
             return False
-        if not isinstance(self.tax_identification, str) and len(self.tax_identification) == 9:
+        if not isinstance(self._tax_identification, str) and len(self._tax_identification) == 9:
             LogFile.log_message("Tax identification -> {}, should be a 9 digits string or int!".format(
                 self.tax_identification), "error")
             return False
-        if not isinstance(self.product_list, list) or not isinstance(self.product_list, str):
-            LogFile.log_message("Product list -> {}, should be a list!".format(self.product_list), "error")
+        if not isinstance(self._product_list, list) or not isinstance(self._product_list, str):
+            LogFile.log_message("Product list -> {}, should be a list!".format(self._product_list), "error")
             return False
-        if not (isinstance(self.address, str) or len(self.address)) > 0:
-            LogFile.log_message("Invalid address -> {}, should be non-empty string ".format(self.address), "error")
+        if not (isinstance(self._address, str) or len(self._address)) > 0:
+            LogFile.log_message("Invalid address -> {}, should be non-empty string ".format(self._address), "error")
             return False
-        if not (isinstance(self.in_charge, str) or len(self.in_charge) > 0):
+        if not (isinstance(self._in_charge, str) or len(self._in_charge) > 0):
             LogFile.log_message("Invalid in charge person -> {}, should be non-empty string ".format(
-                self.in_charge), "error")
+                self._in_charge), "error")
             return False
-        if not (isinstance(self.phone, str) or isinstance(self.phone, int) or len(self.phone) == 10):
+        if not (isinstance(self._phone, str) or isinstance(self._phone, int) or len(self._phone) == 10):
             LogFile.log_message("Invalid phone -> {}, should be non-empty, 10 digits string or int".format(
-                self.phone), "error")
+                self._phone), "error")
             return False
 
         LogFile.log_message("Valid object created, {}".format(self.__str__()), "info")
-        """
         return True
 
     @property

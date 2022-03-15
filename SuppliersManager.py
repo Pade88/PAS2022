@@ -10,6 +10,7 @@ class SupplierManager:
         self.suppliers_list = []
 
     def create_suppliers(self, raw_data):
+        # FIXME
         self.suppliers_list = [Supplier(*item.values()) for item in raw_data["Suppliers"]
                                if True]
 
