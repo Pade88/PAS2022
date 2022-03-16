@@ -35,3 +35,6 @@ Level 3: Maybe
     f(15) GUI may crash on suppliers list when company is set -> OPA, level 1
     o(16) Constant app test / create a class for unit test ( extend logger maybe) -> CRA, level 1
     o(17) Product table view may crash when new products are inserted -> OPA, level 1
+    o(18) If the user accesses the list product, will notice that a crash occurs
+    o(19) Missing diacritics can be noticed on the Add button / Looking for a supplier menu / Adding a supplier menu
+    o(20) Logs are not working on Windows operating system
