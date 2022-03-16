@@ -13,6 +13,7 @@ Proiect Arhitecturi Software
     Version 1.0.1 -> Fixed (1), related to (2)
     Version 1.0.2 -> Fixed (3), to be tested
     Version 1.0.3 -> Fixed (15), to be tested
+    Version 1.0.4 -> Fixed (20)
 # ToDo
 Level 1: ASAP
 Level 2: Mandatory
@@ -37,4 +38,4 @@ Level 3: Maybe
     o(17) Product table view may crash when new products are inserted -> OPA, level 1
     o(18) If the user accesses the list product, will notice that a crash occurs
     o(19) Missing diacritics can be noticed on the Add button / Looking for a supplier menu / Adding a supplier menu
-    o(20) Logs are not working on Windows operating system
+    f(20) Logs are not working on Windows operating system
