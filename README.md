@@ -14,6 +14,7 @@ Proiect Arhitecturi Software
     Version 1.0.2 -> Fixed (3), to be tested
     Version 1.0.3 -> Fixed (15), to be tested
     Version 1.0.4 -> Fixed (20)
+    Version 2.0.0 -> Implemented (5) and (6) -> Functional 
 # ToDo
 Level 1: ASAP
 Level 2: Mandatory
@@ -23,8 +24,8 @@ Level 3: Maybe
     o(2) Implement / redesign sanity_check() for Product / Supplier / Company -> CRA, level 1
     f(3) Replace getters / setters with @property -> OPA/CRA, level 2 -> WIP started in 1.0.2
     o(4) Comments / annotations -> CRA, level 2
-    o(5) <<Delete>> product handler -> OPA, level 2
-    o(6) GUI for <<Delete>> product handler -> OPA, level 2
+    f(5) <<Delete>> product handler -> OPA, level 2
+    f(6) GUI for <<Delete>> product handler -> OPA, level 2
     o(7) Increase log coverage -> CRA, level 1
     o(8) Method check (metaclass-like) -> OPA, level 2
     o(9) Dissambly info in logs -> OPA, level 3
@@ -39,3 +40,4 @@ Level 3: Maybe
     o(18) If the user accesses the list product, will notice that a crash occurs
     o(19) Missing diacritics can be noticed on the Add button / Looking for a supplier menu / Adding a supplier menu
     f(20) Logs are not working on Windows operating system
+    o(21) Main supplier / company combo box does not sync when a item is deleted

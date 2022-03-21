@@ -33,7 +33,7 @@ class SupplierManager:
                             "address": new_supplier.address,
                             "in_charge": new_supplier.in_charge,
                             "phone": new_supplier.phone}
-        IOManager.update_json(SUPPLIERS_DB_FILE, supplier_to_json)
+        IOManager.expand_json(SUPPLIERS_DB_FILE, supplier_to_json)
         LogFile.log_message(f"Furnizorul {supplier_to_json} a fost adaugat", "info")
         self.update_suppliers_list()
 
@@ -56,3 +56,12 @@ class SupplierManager:
         for supplier in self.suppliers_list:
             if supplier.tax_identification == tax_number:
                 return str(supplier)
+
+    def remove_supplier(self, supplier_name):
+        # remove
+        try_del = IOManager.shrink_json(SUPPLIERS_DB_FILE, supplier_name)
+        # Reload
+        self.suppliers_list.clear()
+        raw_data = IOManager.load_json(SUPPLIERS_DB_FILE)
+        self.create_suppliers(raw_data)
+        return try_del

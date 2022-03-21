@@ -30,8 +30,18 @@ class CompanyManager:
 
     def add_new_supplier(self, company, supplier):
         LogFile.log_message(f"Company {self.add_new_supplier.__name__} called with {locals()}", "debug")
-        IOManager.update_json(COMPANIES_DB_FILE, company, supplier)
+        IOManager.expand_json(COMPANIES_DB_FILE, company, supplier)
         self.companies_list.clear()
 
         raw_data = IOManager.load_json(COMPANIES_DB_FILE)
         self.create_companies(raw_data)
+
+    def remove_company(self, company_name):
+        # Delete from json -> No check needed, is performed there
+        try_del = IOManager.shrink_json(COMPANIES_DB_FILE, company_name)
+        # Reload data
+        self.companies_list.clear()
+        raw_data = IOManager.load_json(COMPANIES_DB_FILE)
+        self.create_companies(raw_data)
+        return try_del
+

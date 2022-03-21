@@ -80,7 +80,7 @@ class GUIBuilder(QMainWindow):
         [self.companies_combo_items.addItem(item) for item in items_list]
         self.companies_combo_items.activated.connect(lambda: self.update_suppliers_combo_box(
             self.company_manager.get_company_suppliers(self.companies_combo_items.currentText())))
-
+        self.companies_combo_items.currentText()
         return self.companies_combo_items
 
     def create_suppliers_combo_view(self, items_list):
@@ -144,9 +144,8 @@ class GUIBuilder(QMainWindow):
 
     def delete_suppliers_pressed_handler(self):
         LogFile.log_message("Butonul de stergere a furnizorilor a fost apasat", "info")
-        #self.add_widget = DeleteWindowBuilder(self).init_delete_window_graphics()
-        #self.add_widget.show()
-        print("WIP, Not implemented!")
+        self.remove_widget = DeleteWindowBuilder(self).init_delete_window_graphics()
+        self.remove_widget.show()
 
     def create_table_view_pressed_handler(self):
         LogFile.log_message("Butonul de vizualizare a produselor a fost apasat", "info")

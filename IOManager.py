@@ -11,8 +11,9 @@ class IOManager:
             data = json.load(input_file)
         return data
 
+    # used to extend
     @staticmethod
-    def update_json(file_name, *new_value):
+    def expand_json(file_name, *new_value):
         with open(file_name, "r") as input_file:
             data = json.load(input_file)
 
@@ -31,6 +32,29 @@ class IOManager:
                     data["Companies"][cnt] = new_dict
             with open(file_name, "w+") as output_file:
                 json.dump(data, output_file, indent=2)
+
+    @staticmethod
+    def shrink_json(file_name, value):
+        with open(file_name, "r") as input_file:
+            data = json.load(input_file)
+        if file_name == "suppliers_db.json":
+            for lcl_idx in data["Suppliers"]:
+                if lcl_idx["name"] == value:
+                    successful_op = True
+                    data["Suppliers"].remove(lcl_idx)
+        else:
+            # log data
+            for lcl_idx in data["Companies"]:
+                if lcl_idx["name"] == value:
+                    successful_op = True
+                    data["Companies"].remove(lcl_idx)
+
+            # log data
+        if successful_op:
+            with open(file_name, "w+") as output_file:
+                json.dump(data, output_file, indent=2)
+            return True
+        return False
 
     @staticmethod
     def update_product_list(file_name, args):
