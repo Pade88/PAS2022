@@ -41,3 +41,4 @@ Level 3: Maybe
     o(19) Missing diacritics can be noticed on the Add button / Looking for a supplier menu / Adding a supplier menu
     f(20) Logs are not working on Windows operating system
     o(21) Main supplier / company combo box does not sync when a item is deleted
+    o(22) Convert supplier / company / product to datastructures, getitem, setitem, iter
